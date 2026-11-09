@@ -9,3 +9,16 @@
 8. "Congratulations! You are eligible for a free gift voucher. Click the link below."
 9. "Your KYC has expired. Update your bank details immediately to avoid account suspension."
 10. "Earn unlimited money from home without investment. Register today!"
+
+
+# Normal (ham) messages for comparison
+1. "Hey, are you coming to college tomorrow?"
+2. "Please call me when you reach home."
+3. "Don't forget to bring your laptop to class."
+4. "I will meet you at 5 PM near the bus stop."
+5. "Can you send me today's notes?"
+6. "Your assignment submission deadline is tomorrow."
+7. "Good morning! Have a wonderful day."
+8. "I am going to the market. Do you need anything?"
+9. "Let's have lunch together today."
+10. "I will call you after finishing my work."
