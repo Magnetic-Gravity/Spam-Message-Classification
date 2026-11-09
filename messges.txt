@@ -1,0 +1,11 @@
+# Spam Messages
+1. "Congratulations! You have won a free iPhone. Click here to claim your prize now!"
+2. "URGENT! Your bank account has been blocked. Verify your details immediately."
+3. "You have been selected for a cash prize of ₹50,000. Call now to claim!"
+4. "WINNER!! You have won a free holiday trip. Reply YES to receive your reward."
+5. "Get a guaranteed work-from-home job and earn ₹5,000 daily. Apply now!"
+6. "Your mobile number has won a lottery worth ₹25 lakh. Contact us immediately."
+7. "Exclusive offer! Get 90% discount on all products. Shop now!"
+8. "Congratulations! You are eligible for a free gift voucher. Click the link below."
+9. "Your KYC has expired. Update your bank details immediately to avoid account suspension."
+10. "Earn unlimited money from home without investment. Register today!"
