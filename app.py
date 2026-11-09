@@ -10,33 +10,7 @@ nltk.download('punkt')
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 
-# ps = PorterStemmer()
-
-
-# def transform_text(text):
-#     text = text.lower()   # step 1
-#     text = nltk.word_tokenize(text, preserve_line=True) # step 2
-
-#     y = []
-#     for i in text:   # step 3 
-#         if i.isalnum():
-#             y.append(i)
-            
-#     text=y[:] # List is mutable data type, we should cloning it like this instead of assigning it
-#     y.clear()
-#     for i in text:
-#         if i not in stopwords.words('english') and i not in string.punctuation: # step 4
-#             y.append(i)
-
-#     text = y[:]
-#     y.clear()
-#     for i in text:   
-#         y.append(ps.stem(i))   # step 5
-    
-#     return " ".join(y)
-
 ps = PorterStemmer()
-
 stop_words = set(stopwords.words('english'))
 
 def transform_text(text):
