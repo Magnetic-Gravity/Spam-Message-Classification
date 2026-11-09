@@ -1,35 +1,58 @@
 import streamlit as st
-import string
 import pickle
 import nltk
-nltk.download('punkt')
-nltk.download('punkt_tab')
+import string
 
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
+# ps = PorterStemmer()
+
+
+# def transform_text(text):
+#     text = text.lower()   # step 1
+#     text = nltk.word_tokenize(text, preserve_line=True) # step 2
+
+#     y = []
+#     for i in text:   # step 3 
+#         if i.isalnum():
+#             y.append(i)
+            
+#     text=y[:] # List is mutable data type, we should cloning it like this instead of assigning it
+#     y.clear()
+#     for i in text:
+#         if i not in stopwords.words('english') and i not in string.punctuation: # step 4
+#             y.append(i)
+
+#     text = y[:]
+#     y.clear()
+#     for i in text:   
+#         y.append(ps.stem(i))   # step 5
+    
+#     return " ".join(y)
+
 ps = PorterStemmer()
 
+stop_words = set(stopwords.words('english'))
 
 def transform_text(text):
-    text = text.lower()   # step 1
-    text = nltk.word_tokenize(text, preserve_line=True) # step 2
-
+    text = text.lower()
+    text = nltk.word_tokenize(text, preserve_line=True)
     y = []
-    for i in text:   # step 3 
-        if i.isalnum():
-            y.append(i)
-            
-    text=y[:] # List is mutable data type, we should cloning it like this instead of assigning it
-    y.clear()
     for i in text:
-        if i not in stopwords.words('english') and i not in string.punctuation: # step 4
+        if i.isalnum():
             y.append(i)
 
     text = y[:]
     y.clear()
-    for i in text:   
-        y.append(ps.stem(i))   # step 5
-    
+    for i in text:
+        if i not in stop_words and i not in string.punctuation:
+            y.append(ps.stem(i))
+
     return " ".join(y)
 
 tfidf = pickle.load(open("vectorizer.pkl", "rb"))
